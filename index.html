@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css"/>
-</head>
-<body>
-  <div class="js-clock">
-    <h1>00:00</h1>
-  </div>
-  <form class="js-form form">
-    <input type="text" placeholder="What is your name" />
-  </form>
-  <h4 class="js-greetings greetings"></h4>
-  <form class="js-toDoForm">
-    <input type="text" placeholder="Write a to do" />
-  </form>
-  <ul class="js-toDoList">    
-  </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UJ New Tab</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="weather">
+        <div class="js-img"></div>
+        <div class="js-weather">
+          <div class="js-temp"></div>
+          <div class="js-loca"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="js-clock">
+          <h1>00:00</h1>
+        </div>
+      </section>
+      <section>
+        <div class="main">
+          <form class="js-form form">
+            <input type="text" placeholder="Hello, what's your name?" />
+          </form>
+          <h4 class="js-greetings greetings"></h4>
+          <form class="js-toDoForm form">
+            <input type="text" placeholder="Write a to do" />
+          </form>
+          <ul class="js-toDoList"></ul>
+        </div>
+      </section>
+    </main>
 
-  <script src="clock.js"></script>
-  <script src="greeting.js"></script>
-  <script src="todo.js"></script>
-  <script src="bg.js"></script>
-  <script src="weather.js"></script>
-</body>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+  </body>
 </html>

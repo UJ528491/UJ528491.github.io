@@ -9,18 +9,36 @@ body {
 body {
   color: #2c3e50;
 }
+.main {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 300px;
+}
 
 .js-toDoList {
   color: white;
   font-size: 25px;
 }
 
-.clicked {
-  color: rgb(37, 155, 182);
+.js-greetings {
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-style: italic;
+  font-weight: 400;
 }
+
+.js-toDoForm {
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 400;
+  font-style: italic;
+}
+
 .form,
 .greetings {
   display: none;
+  color: aliceblue;
 }
 
 .showing {
@@ -44,4 +62,15 @@ body {
   height: 100%;
   z-index: -1; /* 0일경우 다른 css를 덮어서 배경으로 쓰기위해 -1지정*/
   animation: fadeIn 0.5s linear;
+}
+
+.js-clock {
+  text-align: center;
+  margin-top: 200px;
+  color: rgb(251, 251, 251);
+  font-size: 60px;
+}
+
+.js-form {
+  font-size: 20px;
 }

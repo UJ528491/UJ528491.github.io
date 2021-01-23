@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  .bgImage {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  .weather {
+    position: absolute;
+    display: flex;
+    font-size: 2rem;
+    color: #fff;
+    right: 3rem;
+    top: 2rem;
+  }
+  .js-clock {
+    margin-top: 26vh;
+    font-size: 7vw;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(95, 95, 95);
+  }
+  section:nth-child(2) {
+    .js-form {
+      display: none;
+    }
+    .showing {
+      display: block;
+      font-size: 3vw;
+      font-style: italic;
+      color: #fff;
+      text-shadow: 2px 2px 2px rgb(95, 95, 95);
+      margin-bottom: 2rem;
+    }
+    .form {
+      input {
+        font-size: 2.5vw;
+        border-radius: 45px;
+        padding-left: 4rem;
+      }
+    }
+  }
+  .js-toDoList {
+    margin-top: 3rem;
+    width: 80vw;
+    height: 20vh;
+    font-size: 2.5vw;
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    li {
+      padding-right: 8rem;
+    }
+  }
+}

@@ -16,7 +16,6 @@ function handleSubmit(event){
   saveName(currentValue);
 }  
 
-
 function askForName(){
   form.classList.add(SHOWING_CN);
   form.addEventListener("submit", handleSubmit);
@@ -25,7 +24,7 @@ function askForName(){
 function paintGreeting(text){
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
-  greeting.innerText = `Hello ${text}`;
+  greeting.innerText = `Hello! ${text}`;
 }
 
 function loadName(){

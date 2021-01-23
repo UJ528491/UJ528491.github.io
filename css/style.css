@@ -1,0 +1,91 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .bgImage {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+body .weather {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  color: #fff;
+  right: 3rem;
+  top: 2rem;
+}
+
+body .js-clock {
+  margin-top: 26vh;
+  font-size: 7vw;
+  color: #fff;
+  text-shadow: 2px 2px 2px #5f5f5f;
+}
+
+body section:nth-child(2) .js-form {
+  display: none;
+}
+
+body section:nth-child(2) .showing {
+  display: block;
+  font-size: 3vw;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 2px 2px 2px #5f5f5f;
+  margin-bottom: 2rem;
+}
+
+body section:nth-child(2) .form input {
+  font-size: 2.5vw;
+  border-radius: 45px;
+  padding-left: 4rem;
+}
+
+body .js-toDoList {
+  margin-top: 3rem;
+  width: 80vw;
+  height: 20vh;
+  font-size: 2.5vw;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .js-toDoList li {
+  padding-right: 8rem;
+}
